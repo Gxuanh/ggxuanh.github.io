@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+   <meta
+      charset="file:///d%3A/%E7%A8%8B%E5%BC%8F%E8%AA%B2/InteractiveProgramming/sketch_oct1a/%E5%93%88%E5%93%88%E5%93%88.html">
+   <title>Vegetables</title>
+   <link rel="stylesheet" herf="style.css">
+
+   <style>
+      html,
+      body {
+         height: 100%;
+         /* 讓html和body佔滿整個視窗 */
+         margin: 0;
+         padding: 0;
+         box-sizing: border-box;
+         background-color: #EDF2C5;
+         font-family: "Noto Sans", sans-serif;
+
+      }
+
+      .container {
+         width: 1440px;
+         height: 1024px;
+         /* 讓容器居中 */
+         overflow: auto;
+         /* 確保內容不超出容器 */
+         text-align:center;
+      }
+
+      .header-title {
+         color: #778A50;
+         font-size: 44px;
+         font-weight: 900;
+         width: 1122px;
+         height: 62px;
+         top: 36px;
+         padding: 20px 20px 20px 200px;
+         gap: 0px;
+         opacity: 0px;
+
+      }
+
+      .media {
+         margin-left: 693px;
+         margin-top: 30px;
+         gap: 20px;
+         display: flex;
+         position: right;
+         margin-left: 830px;
+      }
+
+      .mediapic {
+         display: flex;
+         margin-top: 22px;
+      }
+
+      .fb {
+         height: 24px;
+         width: auto;
+         margin-top: -110px;
+         margin-left: 240px;
+      }
+
+      .ig {
+         height: 24px;
+         width: auto;
+         margin-left: 15px;
+         margin-top: -110px;
+      }
+
+      .vertical {
+         color: #778A50;
+         margin-top: -90px;
+      }
+
+      .login {
+         color: #778A50;
+         font-size: 14px;
+         width: 62px;
+         height: 27px;
+         border: 2px solid #778A50;
+         /*外框線*/
+         border-radius: 3px;
+         /*圓角*/
+         margin-top: -90px;
+         font-weight: bold;
+         line-height:30px;
+         text-align:center;
+      }
+
+      .join {
+         color: #778A50;
+         font-size: 14px;
+         width: 49px;
+         height: 27px;
+         border-radius: 3px;
+         border: 2px solid;
+         margin-top: -90px;
+         line-height:30px;
+         text-align:center;
+      }
+
+      .picture {
+         width: 1120px;
+         height: 448px;
+         margin-top: 16px;
+         margin-bottom: 30px;
+         margin-left: 200px;
+      }
+
+      .nav-list {
+         list-style: none;
+         display: flex;
+         text-align: left;
+         background-color: #798352;
+         width: 1080px;
+         height: 44px;
+         top: 106px;
+         margin-left: 200px;
+         margin-right: 180px;
+         margin-top: -60px;
+         
+      }
+
+      .nav-text {
+         display: block;
+         font-size: 16px;
+         font-weight: 900;
+         color: #EDF2C5;
+         padding: 10px 60px 60px 80px;
+         
+      }
+
+      .nav-link {
+         color: #EDF2C5;
+         text-decoration: none;
+         margin-left: -100px;
+      }
+
+      .article-body {
+         margin-left: 70px;
+      }
+
+      .article-body h3 {
+         font-size: 16px;
+         font-weight: 900;
+         color: #EDF2C5;
+         background-color: #798352;
+         height: 24px;
+         width: 460px;
+         padding: 10px 30px;
+         border-radius: 3px;
+         border: 3px;
+         margin-left: 128px;
+      }
+
+      .picture2 {
+         display: flex;
+         gap: 12px;
+         /*照片間距*/
+         width: 528px;
+         height: auto;
+         margin-left: 128px;
+      }
+
+      .aside-body {
+         margin-left: 670px;
+         margin-top: -216px;
+      }
+
+      .aside-body h3 {
+         font-size: 16px;
+         font-weight: 900;
+         color: #EDF2C5;
+         background-color: #798352;
+         height: 24px;
+         width: 460px;
+         padding: 10px 30px;
+         border-radius: 3px;
+         border: 3px;
+         margin-left: 128px;
+      }
+
+      .aside-p {
+         width: 520px;
+         height: 140px;
+         background-color: #F7FBDA;
+         margin-left: 128px;
+      }
+
+      .paragraph1 {
+         font-size: 12px;
+         color: #7D7D7D;
+         width: 487px;
+         height: 38px;
+         line-height: 1.5;
+         /*文字行句*/
+         padding: 16px;
+         justify-content: flex-end;
+      }
+
+      .line{
+         border-bottom: solid 1px  #7D7D7D;
+         width: 95%;
+         margin-left: 15px;
+      }
+
+      .paragraph2 {
+         font-size: 12px;
+         color: #7D7D7D;
+         width: 487px;
+         line-height: 1.5;
+         padding-left: 16px;
+         padding-top: -1px;
+         justify-content: flex-end;
+
+      }
+
+      .footer p {
+         width: 100vw;
+         height: 60px;
+         margin-bottom: auto;
+         margin-top: 100px;
+         background-color: #778A50;
+         border-radius: 3px;
+         color: #EDF2C5;
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         position: absolute;
+         font-size: 12px;
+         font-weight: 400;
+         line-height: 0px;
+      }
+   </style>
+
+</head>
+<meta charset="utf-8">
+<title>Vegetables</title>
+
+<body>
+   <header class="header">
+      <div class="info">
+         <h1 class="header-title">Vegetables</h1>
+         <div class="media">
+            <div class="mediapic">
+               <img src="C:\Users\Administrator\Downloads\fb.png" alt="fb" class="fb" />
+               <img src="C:\Users\Administrator\Downloads\ig.png" alt="ig" class="ig" />
+            </div>
+            <h2 class="vertical">|</h2>
+            <h5 class="login">LOGIN</h5>
+            <h5 class="join">JOIN</h5>
+         </div>
+      </div>
+      <nav class="nav">
+         <ul class="nav-list">
+            <li class="nav-text">
+               <a href="#" class="nav-link">Home</a>
+            </li>
+            <li class="nav-text">
+               <a href="#" class="nav-link">About Us</a>
+            </li>
+            <li class="nav-text">
+               <a href="#" class="nav-link">Vegetables</a>
+            </li>
+            <li class="nav-text">
+               <a href="#" class="nav-link">Online</a>
+            </li>
+            <li class="nav-text">
+               <a href="#" class="nav-link">Contact</a>
+            </li>
+         </ul>
+      </nav>
+      <div class="picture">
+         <img src="C:\Users\Administrator\Downloads\img_main_pumpkin.png" alt="picture" />
+      </div>
+   </header>
+
+   <div class="article-body">
+      <h3>Vegetables</h3>
+      <div class="picture2">
+         <img src="C:\Users\Administrator\Downloads\img_vegetables_carrot.png" />
+         <img src="C:\Users\Administrator\Downloads\img_vegetables_corn.png" />
+         <img src="C:\Users\Administrator\Downloads\img_vegetables_pepper.png" />
+      </div>
+   </div>
+
+
+   <div class="aside-body">
+      <h3>Contact</h3>
+      <div class="aside-p">
+         <p class="paragraph1">For any questions or suggestions about Vegetables, Vegetables Club or your online order
+            you can contact
+            Vegetables Customer Service by phone, email or post and we’ll be happy to help.</p>
+            <div class="line"></div>
+         <p class="paragraph2">E-mail : Vegetables@aaabbccc.com <br> PHONE : +886-123-456-789</p2>
+      </div>
+   </div>
+
+   <div class="footer">
+      <p>Copyrights 2017 Vegetables cise / Design by Vegetables</p>
+   </div>
+</body>
+
+
+</html>
